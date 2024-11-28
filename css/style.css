@@ -1,0 +1,1072 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #1f1f1f;
+    position: relative;
+    overflow: hidden;
+
+}
+
+p {
+
+    font-weight: 300;
+    color: #313131;
+    font-size: 1.3rem;
+}
+
+*::selection {
+    background-color: #1f1f1f;
+
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    z-index: 99999999999;
+}
+
+.spinner {
+    margin: 300px auto;
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.spinner>div {
+    background-color: rgb(51, 51, 51);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+/*******************************header***********************************************/
+header {
+    transition: all 0.5s;
+    box-shadow: 5px 5px 15px rgba(31, 31, 31, 0.07);
+    border-bottom: 1px solid #416478c0;
+
+}
+
+header .navbar-collapse {
+    border-top: 1px solid #e6e6e6;
+    padding-left: 1rem;
+    background-color: white;
+
+}
+
+header .nav-item {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+
+header .nav-item a {
+    color: #393939;
+    transition: color 0.5s;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+header .nav-item a:hover {
+    color: #787878 !important;
+}
+
+header .navbar-brand {
+    width: 8.5rem;
+    padding: 0rem 1rem;
+}
+
+header button {
+    border-color: transparent !important;
+}
+
+header button:focus {
+    outline: none !important;
+}
+
+header .btn-brdr {
+    padding: 0.5rem;
+    border-left: 1px solid #e6e6e6;
+}
+
+#tooglebtn {
+    color: white;
+}
+
+/******************************************banner***************************************/
+
+#banner {
+    height: 100vh;
+}
+
+#banner .carousel {
+    height: 100%;
+    color: white;
+}
+
+/* #banner .carousel-inner{
+    height: 100%;
+}
+#banner .carousel-item{
+    height: 100%;
+} */
+#banner .layer-gray {
+    background-color: rgba(31, 31, 31, 0.5);
+}
+
+#banner .carousel-info {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+
+#banner .bg-1 {
+    background-image: url("../images/bg-image-28.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner .bg-2 {
+    background-image: url("../images/bg-image-29.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner .carousel-info h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    animation: zoom-in- 0.5s 0.2s ease both;
+}
+
+#banner .carousel-info h4 {
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+    animation: zoom-in- 0.5s 0.7s ease both;
+
+}
+
+.carousel-btn {
+    animation: zoom-in- 0.5s 1s ease both;
+}
+
+@keyframes zoom-in- {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.btn-color {
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    padding: 1rem 1.7rem;
+    font-size: 0.9rem;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-color:hover {
+    color: #1f1f1f;
+    background-color: white;
+}
+
+.btn-read {
+
+    background-color: #00c3da;
+    border: 1px solid #00c3da;
+}
+
+.btn-read:hover {
+    background-color: #00d5ee;
+    transform: translateY(-1px);
+    color: white;
+    animation: bg 0.7s ease;
+
+}
+
+@keyframes bg {
+    100% {
+
+        background-image: linear-gradient(to right bottom, transparent, rgba(255, 255, 255, 0.4), transparent);
+    }
+}
+
+#banner .carousel-control-prev,
+#banner .carousel-control-next {
+    opacity: 0;
+}
+
+
+/******************************************about***************************************/
+
+/* ----------- 2 - ABOUT START ------------- */
+
+
+.about-section {
+    width: 100%;
+}
+
+.container .about-content button {
+    padding: 10px 20px;
+    border-radius: 0;
+    border-color: rgba(0, 0, 0, 0.201);
+    font-size: 12px;
+}
+
+@keyframes typing {
+
+    0.0000%,
+    27.3488% {
+        content: "";
+    }
+
+    1.1395%,
+    26.2093% {
+        content: "S";
+    }
+
+    2.2791%,
+    25.0698% {
+        content: "So";
+    }
+
+    3.4186%,
+    23.9302% {
+        content: "Sof";
+    }
+
+    4.5581%,
+    22.7907% {
+        content: "Soft";
+    }
+
+    5.6977%,
+    21.6512% {
+        content: "Softw";
+    }
+
+    6.8372%,
+    20.5116% {
+        content: "Softwa";
+    }
+
+    7.9767%,
+    19.3721% {
+        content: "Softwar";
+    }
+
+    9.1163%,
+    18.2326% {
+        content: "Software";
+    }
+
+    10.2558%,
+    17.0930% {
+        content: "Softwares";
+    }
+
+    30.7674%,
+    51.2791% {
+        content: "";
+    }
+
+    31.9070%,
+    50.1395% {
+        content: "W";
+    }
+
+    33.0465%,
+    49.0000% {
+        content: "We";
+    }
+
+    34.1860%,
+    47.8605% {
+        content: "Web";
+    }
+
+    35.3256%,
+    46.7209% {
+        content: "Webs";
+    }
+
+    36.4651%,
+    45.5814% {
+        content: "Websit";
+    }
+
+    37.6047%,
+    44.4419% {
+        content: "Websites";
+    }
+
+    54.6977%,
+    75.2093% {
+        content: "";
+    }
+
+    55.8372%,
+    74.0698% {
+        content: "A";
+    }
+
+    56.9767%,
+    72.9302% {
+        content: "Ap";
+    }
+
+    58.1163%,
+    71.7907% {
+        content: "App";
+    }
+
+    59.2558%,
+    70.6512% {
+        content: "Apps";
+    }
+
+    60.3953%,
+    69.5116% {
+        content: "";
+    }
+
+    61.5349%,
+    68.3721% {
+        content: "";
+    }
+
+    78.6279%,
+    96.8605% {
+        content: "We";
+    }
+
+    79.7674%,
+    95.7209% {
+        content: "Web";
+    }
+
+    80.9070%,
+    94.5814% {
+        content: "Webs";
+    }
+
+    82.0465%,
+    93.4419% {
+        content: "Websi";
+    }
+
+    83.1860%,
+    92.3023% {
+        content: "Websit";
+    }
+
+    84.3256%,
+    91.1628% {
+        content: "Websites";
+    }
+}
+
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter {
+    --caret: currentcolor;
+}
+
+.typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+}
+
+
+
+
+/* ----------------------- 2 - ABOUT END ------------------------- */
+/******************************************team***************************************/
+/* ----------- 3 - TEAM START ------------- */
+
+.team-section {
+    width: 100%;
+}
+
+.team-section h1:before {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.team-section h1:before {
+    z-index: -1;
+    content: 'C';
+    font-size: 2em;
+    opacity: 0.06;
+    position: absolute;
+    top: -0.5em;
+    left: -0.15em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.overlay-cyan {
+    background-color: #31d2f2c9;
+    height: 0%;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    transition: all 400ms;
+}
+
+.team-item:hover .overlay-cyan {
+    height: 100%;
+}
+
+.overlay-content p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.overlay-icons {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.overlay-icons i {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.overlay-icons i:hover {
+    color: red !important;
+}
+
+.scaled-pricing-card .team-item{
+   transform: scale(1.06);
+}
+.team-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bestvaluep {
+    top: 5%;
+    right: 15%;
+    font-size: 10px;
+    background-color: #31D2F2;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pricing-card-header h1 {
+    line-height: 1.5;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-card-header h1 span {
+    font-size: 2em;
+    position: relative;
+    top: -0.1em;
+}
+
+.overlay-icons i {
+    margin-right: 10px;
+}
+
+
+
+/* ----------------------- 3 - TEAM END ------------------------- */
+
+/****************************services************************************************/
+#services {
+    background-color: #636363;
+    color: white;
+}
+
+#services .main-title::before {
+    content: "W";
+    color: white;
+    bottom: 20%;
+    left: 50%;
+    top: unset;
+    transform: translate(-50%, 20%);
+
+}
+
+#services .title {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#services li {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#services .l-1 li,
+#services .l-2 li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+
+#services li i {
+    padding-right: 0.8rem;
+}
+
+#services p {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* * ----------- 5 - PRICING START ------------- */
+
+/* 
+.pricing-section {
+    background-color: #F7F7F7;
+    width: 100%;
+}
+
+.pricing-section h2:before {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pricing-section h2:before {
+    z-index: 0;
+    content: 'C';
+    font-size: 2em;
+    opacity: 0.06;
+    position: absolute;
+    top: -0.5em;
+    left: -0.15em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.scaled-pricing-card {
+    transform: scale(1.045);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-item {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+
+
+/* ----------------------- 5 - PRICING END ------------------------- */
+
+
+/* ----------- 5 - SLIDER START ------------- */
+
+.padding-sec {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.client {
+    background-color: #f7f7f7;
+}
+.client .carousel .carousel-inner{
+    width: 50%;
+}
+.client .carousel-item{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.client .carousel-item .carousel-content span {
+    font-size: 14px;
+}
+
+.client .carousel-item .carousel-content h6{
+    font-size: 22px;
+    font-weight: 700;
+}
+.client .carousel-item .carousel-content p {
+    font-size: 15px;
+    opacity: .7;
+    letter-spacing: 1px;
+}
+
+.client .carousel .carousel-inner .carousel-item img{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 120px;
+}
+.client .carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+}
+
+.client .carousel .carousel-indicators button.active {
+    background-color: #09c;
+    border: none;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    background-color: transparent;
+}
+.client .carousel-control-prev i,
+.client .carousel-control-next i{
+    color: black;
+    font-size: 30px;
+    transition: .5s;
+}
+
+.client .carousel-control-next:hover i{
+    color: #09c;
+    transform: translateX(10px);
+}
+.client .carousel-control-prev:hover i{
+    color: #09c;
+    transform: translateX(-10px);
+}
+
+
+/* ----------- 6 - CONTACT START ------------- */
+
+/* #contact input,
+#contact textarea {
+    border: 2px solid #eeeeee;
+    color: #555555;
+    resize: none;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border: 2px solid #1f1f1f;
+    outline: none;
+}
+
+#contact label {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#contact .main-title::before {
+    content: "G";
+    bottom: -5%;
+    left: -8%;
+    top: unset;
+    transform: translate(8%, 5%);
+    text-align: left;
+}
+
+iframe {
+    height: 70vh;
+}
+
+.slideUp {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    z-index: 999999;
+}
+ */
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-map {
+    width: 49%;
+}
+
+.footer-form {
+    width: 49%;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.contact-section h2:before {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.contact-section h2:before {
+    z-index: 0;
+    content: 'G';
+    font-size: 2em;
+    opacity: 0.09;
+    position: absolute;
+    top: -0.5em;
+    left: -0.15em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+
+
+@media (max-width: 767.98px) {
+    .footer-map {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .footer-form {
+        width: 100%;
+    }
+
+    .testimonial-content {
+        width: 100%;
+    }
+
+    .service-list {
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    
+
+}
+
+
+
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+    .social-media-list {
+        display: none;
+    }
+    .client .carousel .carousel-inner{
+        width: 75%;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+
+/****************************tablet************************************************/
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 95%;
+    }
+
+    #banner .carousel-info h1 {
+        font-size: 4.3rem;
+        font-weight: 700;
+    }
+
+    #banner .arrows {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    #banner .carousel-control-prev,
+    #banner .carousel-control-next {
+
+        opacity: 1;
+        left: 0;
+        border: 1px solid white;
+        padding: 15px;
+        top: unset;
+        width: 50px;
+        border-left: none;
+        position: relative;
+        bottom: 0;
+
+    }
+
+    #banner .carousel-control-prev::before,
+    #banner .carousel-control-next::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        transition: left 0.2s linear;
+        z-index: -10;
+
+    }
+
+
+    #banner .carousel-control-prev:hover::before,
+    #banner .carousel-control-next:hover::before {
+        left: 0;
+    }
+
+    #banner .carousel-control-prev:hover .carousel-control-prev-icon,
+    #banner .carousel-control-next:hover .carousel-control-next-icon {
+        color: #1f1f1f !important;
+    }
+
+    #banner .carousel-control-prev-icon,
+    #banner .carousel-control-next-icon {
+
+        background-image: none;
+        color: white !important;
+
+    }
+
+    #pricing .testimonial-container {
+
+        top: -15%;
+    }
+
+    #pricing .carousel-item {
+        background-color: white;
+        padding: 5rem 4rem;
+        position: relative;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
+
+    }
+
+
+}
+
+
+/*****************************desktop*****************************************************/
+@media screen and (min-width:992px) {
+
+    .container {
+        max-width: 85%;
+    }
+
+    header {
+        background-color: transparent;
+    }
+
+    header .navbar-collapse {
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid #e6e6e6;
+        background-color: transparent;
+
+    }
+
+    header .nav-item a {
+        margin-bottom: 0;
+        color: white;
+    }
+
+    header .btn-brdr {
+        padding: 0;
+        border-left: none;
+    }
+
+    header .container-fluid {
+        max-width: 1250px;
+    }
+
+    #banner .carousel-info h1 {
+        font-size: 6.2rem;
+        font-weight: 700;
+    }
+
+    #banner .carousel-info h4 {
+        font-size: 1.14rem;
+    }
+
+    #about .inner p {
+        font-size: 1.5rem;
+    }
+
+    #services .main-title::before {
+        content: "W";
+        color: white;
+
+        bottom: 20%;
+        left: -10%;
+        top: unset;
+        transform: translate(10%, 20%);
+        text-align: left;
+    }
+
+    #services .title {
+        text-align: left;
+    }
+
+    #pricing .testimonial-container {
+
+        top: -15%;
+    }
+
+    #pricing .best {
+        transform: scale(1.1);
+    }
+
+    #pricing .carousel-control-prev,
+    #pricing .carousel-control-next {
+        opacity: 1;
+    }
+
+    #pricing .carousel-inner {
+        width: 65%;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+    #contact .main-title::before {
+        content: "G";
+        bottom: -5%;
+        left: -15%;
+        top: unset;
+        transform: translate(15%, 5%);
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (max-width: 568px) {
+    .client .carousel .carousel-inner{
+        width: 90%;
+    }
+    .client .carousel .carousel-inner .carousel-content h6{
+        font-size: 18px;
+    }
+    .client .carousel .carousel-item .carousel-content p{
+        font-size: 12px !important;
+    }
+}
